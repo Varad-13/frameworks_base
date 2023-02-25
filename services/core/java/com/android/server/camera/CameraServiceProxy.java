@@ -1113,13 +1113,13 @@ public class CameraServiceProxy extends SystemService
                     }
                     // If not already active, notify window manager about this new package using a
                     // camera
-                    if (!alreadyActivePackage) {
-                        WindowManagerInternal wmi =
-                                LocalServices.getService(WindowManagerInternal.class);
-                        float minFps = getMinFps(cameraState);
-                        wmi.addRefreshRateRangeForPackage(clientName,
-                                minFps, MAX_PREVIEW_FPS);
-                    }
+                    //if (!alreadyActivePackage) {
+                    //    WindowManagerInternal wmi =
+                    //            LocalServices.getService(WindowManagerInternal.class);
+                    //    float minFps = getMinFps(cameraState);
+                    //    wmi.addRefreshRateRangeForPackage(clientName,
+                    //            minFps, MAX_PREVIEW_FPS);
+                    //}
 
                     // Update activity events
                     CameraUsageEvent newEvent = new CameraUsageEvent(
